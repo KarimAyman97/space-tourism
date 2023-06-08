@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/KarimAyman97/space-tourism)
+- Live Site URL: [Add live site URL here](https://space-tourism-o9i9j1js7-karimayman97.vercel.app/)
 
 ## My process
 
