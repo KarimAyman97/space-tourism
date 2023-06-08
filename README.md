@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- **[Overview](#overview)**
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- **[My process](#my-process)**
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- **[Author](#author)**
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+![](./public/images/screens/home.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first Design
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+
+### What I learned
+
+I learnt how to use Next.js Routing file structure , and how to use animations using TransitionGroup and CSSTransition
+and how to use SCSS rather than CSS with next.js
+
+```JSX
+const Animation = ({
+  index,
+  children,
+  className,
+}: {
+  index: number;
+  children: ReactElement;
+  className?: string;
+}) => {
+  return (
+    <TransitionGroup className={className || ""}>
+      <CSSTransition
+        key={index}
+        timeout={600}
+        classNames={{
+          enter: styles.animEnter,
+          enterActive: styles.animEnterActive,
+          exit: "hidden",
+        }}
+      >
+        {children}
+      </CSSTransition>
+    </TransitionGroup>
+  );
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Useful resources
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [FrontEnd Mentor Solution ](https://www.frontendmentor.io/solutions/space-tourism-website-with-nextjs-and-tailwindcss-qgIuCdMidQ) - This Solution Helped me alot in making Transition i Learnt alot thanks to this solution .
+- [Detect window size](https://stackoverflow.com/a/63408216) - This solution helped me to finally learn detecting window size in `Next.js` and `React`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Author
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- _Github_ - [@karim_Ayman](https://github.com/KarimAyman97)
+- _Frontend Mentor_ - [@Karim_Ayman](https://www.frontendmentor.io/profile/KarimAyman97)
+- _LinkedIn_ - [@karimAyman](https://www.linkedin.com/in/karimayman97/)

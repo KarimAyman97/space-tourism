@@ -1,0 +1,368 @@
+@import "../utils/breakpoints";
+@import "../fonts.scss";
+
+.number {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.tecContainer {
+  display: flex;
+  color: white;
+}
+
+.textContainer {
+  display: flex;
+}
+.numberContainer {
+  display: flex;
+}
+
+@include large-screen {
+  .number {
+    font-size: 28px;
+    line-height: 34px;
+    padding-right: 28px;
+    letter-spacing: 4.725px;
+  }
+  .tecContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 26px 0 101px 165px;
+  }
+  .textContainer {
+    flex-direction: row;
+    margin-top: 111px;
+  }
+  .numberContainer {
+    flex-direction: column;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 32px;
+    mix-blend-mode: normal;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.6s;
+    &Active {
+      width: 80px;
+      height: 80px;
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: left;
+      letter-spacing: 2px;
+      padding: 22px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+      mix-blend-mode: normal;
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border-color 0.3s, background-color 0.6s;
+      color: #0b0d17;
+      background-color: #ffffff;
+    }
+    &:hover {
+      border-color: #ffffff;
+    }
+  }
+
+  .textDiv {
+    margin-left: 80px;
+    max-width: 470px;
+
+    .heading1 {
+      font-family: "Barlow Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      text-align: left;
+      color: #d0d6f9;
+      text-transform: uppercase;
+    }
+    .heading2 {
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px;
+      text-align: left;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .paragraph {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: left;
+      color: #d0d6f9;
+    }
+  }
+
+  .imgContainer {
+    position: relative;
+    width: 515px;
+    margin-left: 130px;
+  }
+}
+
+@include medium-screen {
+  .number {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 16px;
+    letter-spacing: 3.375px;
+  }
+  .tecContainer {
+    flex-direction: column;
+    margin: 0;
+  }
+  .textContainer {
+    flex-direction: column;
+    margin-top: 56px;
+  }
+  .numberContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    padding: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 16px;
+    mix-blend-mode: normal;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.6s;
+    &Active {
+      width: 60px;
+      height: 60px;
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: left;
+      letter-spacing: 1.5px;
+      padding: 16px;
+      text-align: center;
+      color: #ffffff;
+      margin-right: 16px;
+      mix-blend-mode: normal;
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border-color 0.3s, background-color 0.6s;
+      color: #0b0d17;
+      background-color: #ffffff;
+    }
+    &:hover {
+      border-color: #ffffff;
+    }
+  }
+
+  .textDiv {
+    text-align: center;
+    margin: auto;
+    max-width: 458px;
+    margin-top: 44px;
+
+    .heading1 {
+      text-transform: uppercase;
+      font-family: "Barlow Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      text-align: center;
+      color: #d0d6f9;
+    }
+    .heading2 {
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 46px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 16px;
+    }
+    .paragraph {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      color: #d0d6f9;
+      margin-top: 16px;
+    }
+  }
+  .imgContainer {
+    order: -1;
+    position: relative;
+    max-width: auto;
+    height: 310px;
+    margin: 0;
+    margin-top: 60px;
+  }
+}
+
+@include small-screen {
+  .number {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    padding-right: 18px;
+  }
+
+  .tecContainer {
+    flex-direction: column;
+    margin: 0;
+  }
+  .textContainer {
+    flex-direction: column;
+    margin-top: 34px;
+  }
+  .numberContainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 11px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 16px;
+    mix-blend-mode: normal;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.6s;
+    &Active {
+      width: 40px;
+      height: 40px;
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 1.5px;
+      padding: 16px;
+      text-align: center;
+      color: #ffffff;
+      margin-right: 16px;
+      mix-blend-mode: normal;
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.25);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border-color 0.3s, background-color 0.6s;
+      color: #0b0d17;
+      background-color: #ffffff;
+    }
+    &:hover {
+      border-color: #ffffff;
+    }
+  }
+
+  .textDiv {
+    text-align: center;
+    margin: auto;
+    max-width: 327px;
+    margin-top: 26px;
+
+    .heading1 {
+      text-transform: uppercase;
+      font-family: "Barlow Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 2.3625px;
+      color: #d0d6f9;
+    }
+    .heading2 {
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .paragraph {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #d0d6f9;
+    }
+  }
+  .imgContainer {
+    order: -1;
+    position: relative;
+    max-width: auto;
+    height: 310px;
+    margin: 0;
+    margin-top: 32px;
+  }
+}
+
+/* <Animation> */
+.animEnter {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-in;
+}
+.animEnterActive {
+  opacity: 1;
+  transform: none;
+}
+/* </Animation> */
